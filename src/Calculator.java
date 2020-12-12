@@ -2,6 +2,8 @@
 public class Calculator {
 	
 	public int calculate(String input) {
+		String[] numbers = input.split(",");
+
 		if(isEmpty(input)) {
 			return 0;
 		}
