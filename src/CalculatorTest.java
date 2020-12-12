@@ -36,4 +36,8 @@ public class CalculatorTest {
 	public void FixNegative() throws Exception{
 		calculator.calculate("-1");
 	}
+	
+	public void greaterThan1000() throws Exception{
+		assertEquals(calculator.calculate("20,20,2000"), 20);
+	}
 }
