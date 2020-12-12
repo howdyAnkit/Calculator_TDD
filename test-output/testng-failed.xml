@@ -6,7 +6,7 @@
       <class name="CalculatorTest">
         <methods>
           <include name="init"/>
-          <include name="DelimitedRuns"/>
+          <include name="greaterThan1000"/>
         </methods>
       </class> <!-- CalculatorTest -->
     </classes>

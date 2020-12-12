@@ -38,6 +38,6 @@ public class CalculatorTest {
 	}
 	
 	public void greaterThan1000() throws Exception{
-		assertEquals(calculator.calculate("20,20,2000"), 20);
+		assertEquals(calculator.calculate("5,20,2001"), 25);
 	}
 }

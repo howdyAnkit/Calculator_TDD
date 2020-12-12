@@ -16,9 +16,16 @@ public class Calculator {
 	
 	private int getSum(String[] numbers) throws Exception {
 		NegativeException(numbers);
+		return greaterThan1000(numbers);
+	}
+	
+	private int greaterThan1000(String[] numbers) {
 		int sum = 0;
-		for(String value: numbers) {
-			sum += Integer.parseInt(value);	
+		for(String values: numbers) {
+			if(stringToInt(values) > 1000) {
+				continue;
+			} 
+			sum += stringToInt(values);
 		}
 		return sum;
 	}
