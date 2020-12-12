@@ -19,4 +19,8 @@ public class CalculatorTest {
 	public void singleValueIsReplied() {
 		assertEquals(calculator.calculate("1"),1);
 	}
+
+	public void Sum() throws Exception {
+		assertEquals(calculator.calculate("1,2"), 3);
+	}
 }

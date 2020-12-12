@@ -7,7 +7,15 @@ public class Calculator {
 		if(isEmpty(input)) {
 			return 0;
 		}
-		return stringToInt(input);
+		if(input.length() == 1) {
+			return stringToInt(input);
+		}else {
+			return getSum(numbers[0],numbers[1]);
+		}	
+	}
+	
+	private int getSum(String numA, String numB) {
+		return Integer.parseInt(numA) + Integer.parseInt(numB);
 	}
 	
 	private boolean isEmpty(String input) {
