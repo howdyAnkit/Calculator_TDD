@@ -12,11 +12,11 @@ public class CalculatorTest {
 		calculator = new Calculator();
 	}
 	
-	public void emptyStringReturnsZero() {
+	public void emptyStringReturnsZero() throws Exception {
 		assertEquals(calculator.calculate(""),0);
 	}
 	
-	public void singleValueIsReplied() {
+	public void singleValueIsReplied() throws Exception {
 		assertEquals(calculator.calculate("1"),1);
 	}
 
