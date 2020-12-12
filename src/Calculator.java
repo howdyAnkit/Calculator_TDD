@@ -16,8 +16,8 @@ public class Calculator {
 	
 	private int getSum(String[] numbers) {
 		int sum = 0;
-		for(String current: numbers) {
-			sum += Integer.parseInt(current);	
+		for(String value: numbers) {
+			sum += Integer.parseInt(value);	
 		}
 		return sum;
 	}
