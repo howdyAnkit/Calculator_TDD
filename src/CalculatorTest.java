@@ -23,4 +23,8 @@ public class CalculatorTest {
 	public void Sum() throws Exception {
 		assertEquals(calculator.calculate("1,2"), 3);
 	}
+	
+	public void DelimitedRuns() throws Exception {
+		assertEquals(calculator.calculate("1\n2"), 3);
+	}
 }

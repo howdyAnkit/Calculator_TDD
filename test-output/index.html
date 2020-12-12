@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Ankit\AppData\Local\Temp\testng-eclipse-423277303\testng-customsuite.xml</span>
+                    <span>C:\Users\Ankit\AppData\Local\Temp\testng-eclipse-1155760943\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +102,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="CalculatorTest" class="method navigator-link" hash-for-method="DelimitedRuns">DelimitedRuns</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="CalculatorTest" class="method navigator-link" hash-for-method="Sum">Sum</a> <!-- method navigator-link -->
@@ -137,6 +142,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="DelimitedRuns">
+                  </a> <!-- DelimitedRuns -->
+                  <span class="method-name">DelimitedRuns</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="Sum">
                   </a> <!-- Sum -->
                   <span class="method-name">Sum</span>
@@ -161,7 +173,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Ankit\AppData\Local\Temp\testng-eclipse-423277303\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Ankit\AppData\Local\Temp\testng-eclipse-1155760943\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -210,19 +222,23 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Sum')
+data.setCell(0, 1, 'DelimitedRuns')
 data.setCell(0, 2, 'CalculatorTest')
 data.setCell(0, 3, 7);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'emptyStringReturnsZero')
+data.setCell(1, 1, 'singleValueIsReplied')
 data.setCell(1, 2, 'CalculatorTest')
 data.setCell(1, 3, 1);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'singleValueIsReplied')
+data.setCell(2, 1, 'Sum')
 data.setCell(2, 2, 'CalculatorTest')
 data.setCell(2, 3, 1);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'emptyStringReturnsZero')
+data.setCell(3, 2, 'CalculatorTest')
+data.setCell(3, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -259,16 +275,20 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">Sum</span>
-                <span class="method-start">30 ms</span>
+                <span class="method-name">DelimitedRuns</span>
+                <span class="method-start">29 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">emptyStringReturnsZero</span>
+                <span class="method-name">Sum</span>
                 <span class="method-start">39 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">singleValueIsReplied</span>
+                <span class="method-name">emptyStringReturnsZero</span>
                 <span class="method-start">42 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">singleValueIsReplied</span>
+                <span class="method-start">45 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
