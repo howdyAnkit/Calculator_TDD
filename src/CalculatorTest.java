@@ -31,4 +31,9 @@ public class CalculatorTest {
 	public void DelimitedThreeSum() throws Exception{
 		assertEquals(calculator.calculate("1,2,3"),6);
 	}
+	
+	@Test(expectedExceptions=Exception.class)
+	public void FixNegative() throws Exception{
+		calculator.calculate("-1");
+	}
 }
