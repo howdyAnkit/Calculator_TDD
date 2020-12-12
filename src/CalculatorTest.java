@@ -24,7 +24,11 @@ public class CalculatorTest {
 		assertEquals(calculator.calculate("1,2"), 3);
 	}
 	
-	public void DelimitedRuns() throws Exception {
+	public void DelimitedTwoSum() throws Exception {
 		assertEquals(calculator.calculate("1\n2"), 3);
+	}
+	
+	public void DelimitedThreeSum() throws Exception{
+		assertEquals(calculator.calculate("1,2,3"),6);
 	}
 }
